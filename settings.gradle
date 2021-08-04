@@ -1,0 +1,2 @@
+rootProject.name = "IS3_10518066"
+include ':app'

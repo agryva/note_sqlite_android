@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="62dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/circle_back" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/back_save"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/check_circle" />
+
+        <ImageView
+            android:id="@+id/back_edit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_pencil" />
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/trash_button"
+        android:layout_toStartOf="@id/frame_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="gone"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/trash_can" />
+
+
+    <EditText
+        android:id="@+id/et_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_button"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:hint="Judul Note"
+        android:importantForAutofill="no"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_desk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:hint="Disini Notenya"
+        android:textSize="16sp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:layout_below="@id/et_judul"
+        android:background="@android:color/transparent"
+        android:importantForAutofill="no" />
+
+</RelativeLayout>
